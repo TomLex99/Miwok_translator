@@ -19,10 +19,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +29,22 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
-        this.setTitle("Miwok");
+
+        final TextView ear =(TextView) findViewById(R.id.numbers);
+        ear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              Intent intent_numbers = new Intent(MainActivity.this, Numbers.class);
+              startActivity(intent_numbers);
+            }
+
+
+        });
+
+
     }
 
-    public void openNumberLayout(View view){
 
-        Intent i = new Intent(this, Numbers.class);
-        startActivity(i);
-
-    }
     public void openFamilyLayout(View view){
 
         Intent i = new Intent(this, Famili_Members.class);
