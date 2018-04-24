@@ -30,41 +30,52 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        final TextView ear =(TextView) findViewById(R.id.numbers);
-        ear.setOnClickListener(new View.OnClickListener() {
+
+
+        final TextView numbers =(TextView) findViewById(R.id.numbers);
+        numbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              Intent intent_numbers = new Intent(MainActivity.this, Numbers.class);
-              startActivity(intent_numbers);
+
+                    Intent intend_numbers = new Intent(MainActivity.this, Numbers.class);
+                    startActivity(intend_numbers);
             }
 
+        });
 
+        TextView family = (TextView) findViewById(R.id.family);
+        family.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intend_family = new Intent(MainActivity.this, Famili_Members.class);
+                startActivity(intend_family);
+            }
+        });
+
+
+        TextView colors = (TextView) findViewById(R.id.family);
+        colors.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intend_Color = new Intent(MainActivity.this, Colors.class);
+                startActivity(intend_Color);
+            }
+        });
+
+
+        TextView phrases = (TextView) findViewById(R.id.family);
+        phrases.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view){
+                Intent intend_phrases = new Intent(MainActivity.this, Phrases.class);
+                startActivity(intend_phrases);
+            }
         });
 
 
     }
-
-
-    public void openFamilyLayout(View view){
-
-        Intent i = new Intent(this, Famili_Members.class);
-        startActivity(i);
-
-    }
-    public void openColorLayout(View view){
-
-        Intent i = new Intent(this, Colors.class);
-        startActivity(i);
-
-    }
-    public void openPhrasesLayout(View view){
-
-
-        Intent i = new Intent(this, Phrases.class);
-        startActivity(i);
-
-    }
-
-
 
 }
