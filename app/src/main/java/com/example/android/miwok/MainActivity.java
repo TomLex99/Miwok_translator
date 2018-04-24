@@ -15,10 +15,14 @@
  */
 package com.example.android.miwok;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,5 +30,35 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+        this.setTitle("Miwok");
     }
+
+    public void openNumberLayout(View view){
+
+        Intent i = new Intent(this, Numbers.class);
+        startActivity(i);
+
+    }
+    public void openFamilyLayout(View view){
+
+        Intent i = new Intent(this, Famili_Members.class);
+        startActivity(i);
+
+    }
+    public void openColorLayout(View view){
+
+        Intent i = new Intent(this, Colors.class);
+        startActivity(i);
+
+    }
+    public void openPhrasesLayout(View view){
+
+
+        Intent i = new Intent(this, Phrases.class);
+        startActivity(i);
+
+    }
+
+
+
 }
