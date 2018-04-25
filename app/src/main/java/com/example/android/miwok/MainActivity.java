@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        TextView colors = (TextView) findViewById(R.id.family);
+        TextView colors = (TextView) findViewById(R.id.colors);
         colors.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        TextView phrases = (TextView) findViewById(R.id.family);
+        TextView phrases = (TextView) findViewById(R.id.phrases);
         phrases.setOnClickListener(new View.OnClickListener(){
 
             @Override
