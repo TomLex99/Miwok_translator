@@ -18,16 +18,16 @@ public class Numbers extends AppCompatActivity {
 
 
 
-       Numbers_list.add( new Word("one","lutti"));
-        Numbers_list.add( new Word("two","otiiko"));
-        Numbers_list.add( new Word("three","tolookosu"));
-        Numbers_list.add( new Word("four","oyyisa"));
-        Numbers_list.add( new Word("five","massokka"));
-        Numbers_list.add( new Word("six","temmokka"));
-        Numbers_list.add( new Word("seven","kenekaku"));
-        Numbers_list.add( new Word("eight","kawinta"));
-        Numbers_list.add( new Word("nine","wo'e"));
-        Numbers_list.add( new Word("ten","na'aacha"));
+       Numbers_list.add( new Word("one","lutti",R.drawable.number_one));
+        Numbers_list.add( new Word("two","otiiko",R.drawable.number_two));
+        Numbers_list.add( new Word("three","tolookosu",R.drawable.number_three));
+        Numbers_list.add( new Word("four","oyyisa",R.drawable.number_four));
+        Numbers_list.add( new Word("five","massokka",R.drawable.number_five));
+        Numbers_list.add( new Word("six","temmokka",R.drawable.number_six));
+        Numbers_list.add( new Word("seven","kenekaku",R.drawable.number_seven));
+        Numbers_list.add( new Word("eight","kawinta",R.drawable.number_eight));
+        Numbers_list.add( new Word("nine","wo'e",R.drawable.number_nine));
+        Numbers_list.add( new Word("ten","na'aacha",R.drawable.number_ten));
 
 
 
