@@ -16,16 +16,16 @@ public class Famili_Members extends AppCompatActivity {
 
         ArrayList <Word> FamilyList = new ArrayList<Word>();
 
-FamilyList.add(new Word ("father","әpә"));
-        FamilyList.add(new Word ("mother","әṭa"));
-        FamilyList.add(new Word ("son","angsi"));
-    FamilyList.add(new Word ("daugther","tune"));
-        FamilyList.add(new Word ("older brother", "taachi"));
-        FamilyList.add(new Word ("younger brother","chilatti"));
-        FamilyList.add(new Word ("older sister", "teṭe"));
-        FamilyList.add(new Word ("younger sister","kolliti"));
-        FamilyList.add(new Word ("grandmother","ama"));
-        FamilyList.add(new Word ("grandfather","paapa"));
+FamilyList.add(new Word ("father","әpә",R.drawable.family_father));
+        FamilyList.add(new Word ("mother","әṭa",R.drawable.family_mother));
+        FamilyList.add(new Word ("son","angsi",R.drawable.family_son));
+    FamilyList.add(new Word ("daugther","tune",R.drawable.family_daughter));
+        FamilyList.add(new Word ("older brother", "taachi",R.drawable.family_older_brother));
+        FamilyList.add(new Word ("younger brother","chilatti",R.drawable.family_younger_brother));
+        FamilyList.add(new Word ("older sister", "teṭe",R.drawable.family_older_sister));
+        FamilyList.add(new Word ("younger sister","kolliti",R.drawable.family_younger_sister));
+        FamilyList.add(new Word ("grandmother","ama",R.drawable.family_grandmother));
+        FamilyList.add(new Word ("grandfather","paapa",R.drawable.family_grandfather));
 
         WordAdapter wad=new WordAdapter(this,FamilyList);
 

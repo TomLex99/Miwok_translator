@@ -6,16 +6,19 @@ import android.provider.MediaStore;
 public class Word {
     private String default_word,miwok_word;
 private int ID;
+boolean has_Image;
 
     public Word (String default_word, String miwok_word){
         this.default_word=default_word;
         this.miwok_word=miwok_word;
+        has_Image=false;
     }
 
     public Word (String default_word, String miwok_word, int ID){
         this.default_word=default_word;
         this.miwok_word=miwok_word;
         this.ID=ID;
+        has_Image=true;
     }
 
     public String getDefault_word() {
@@ -36,5 +39,9 @@ public void setDefault_word(String default_word){
 
     public int getID(){
         return ID;
+    }
+
+    public boolean getImageStatus(){
+        return has_Image;
     }
 }
