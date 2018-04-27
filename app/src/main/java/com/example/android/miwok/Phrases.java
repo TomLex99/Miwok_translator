@@ -19,16 +19,16 @@ public class Phrases extends AppCompatActivity {
 
         ArrayList<Word> PhrasesList = new ArrayList <Word>();
 
-        PhrasesList.add(new Word("Where are you going?","mintp wukusu"));
-        PhrasesList.add(new Word ("What is your Name?", "tinnә oyaase'nә"));
-        PhrasesList.add(new Word ("My name is ... ", "oyaaset ... "));
-        PhrasesList.add(new Word ("How are you feeling?","michәksәs?"));
-        PhrasesList.add(new Word ("I'm feeling good.", "Kuchi achit"));
-        PhrasesList.add(new Word ("Are you comming?","әәnәs'aa?"));
-        PhrasesList.add(new Word ("Yes , I'm comming.","hәә’ әәnәm"));
-        PhrasesList.add(new Word ("I'm comming", "әәnәm"));
-        PhrasesList.add(new Word ("Let's go.","yoowutis"));
-        PhrasesList.add(new Word ("Come here","әnni'nem"));
+        PhrasesList.add(new Word(R.raw.number_one,"Where are you going?","mintp wukusu"));
+        PhrasesList.add(new Word (R.raw.number_one,"What is your Name?", "tinnә oyaase'nә"));
+        PhrasesList.add(new Word (R.raw.number_one,"My name is ... ", "oyaaset ... "));
+        PhrasesList.add(new Word (R.raw.number_one,"How are you feeling?","michәksәs?"));
+        PhrasesList.add(new Word (R.raw.number_one,"I'm feeling good.", "Kuchi achit"));
+        PhrasesList.add(new Word (R.raw.number_one,"Are you comming?","әәnәs'aa?"));
+        PhrasesList.add(new Word (R.raw.number_one,"Yes , I'm comming.","hәә’ әәnәm"));
+        PhrasesList.add(new Word (R.raw.number_one,"I'm comming", "әәnәm"));
+        PhrasesList.add(new Word (R.raw.number_one,"Let's go.","yoowutis"));
+        PhrasesList.add(new Word (R.raw.number_one,"Come here","әnni'nem"));
 
         WordAdapter wad=new WordAdapter(this,PhrasesList);
 
